@@ -1,0 +1,28 @@
+// import { useEffect, useState } from 'react';
+// import { useParams } from 'react-router-dom';
+// import { fetchSingleFilm } from '../../service/servive-api';
+
+// export default function useFetchMovieDetails() {
+//   const { movieId } = useParams();
+//   const [movieDetails, setMovieDetails] = useState(null);
+//   const [error, setError] = useState(null);
+
+//   useEffect(() => {
+//     fetchSingleFilm(movieId)
+//       .then(data => {
+//         if (data.length === 0) {
+//           setMovieDetails([]);
+//           setError('Інфррмація про фільм відсутня');
+//           console.log('Інфррмація про фільм відсутня');
+//           return;
+//         }
+
+//         setMovieDetails(data);
+//       })
+//       .catch(error => {
+//         setError(error.message);
+//         console.log(error.message);
+//       });
+//   }, [movieId, setMovieDetails]);
+//   return { movieDetails, error };
+// }
